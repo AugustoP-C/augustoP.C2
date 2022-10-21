@@ -1,6 +1,6 @@
-package UEC;
+package UltimateEmojiCombate;
 
-public class lutador {
+public class Lutador {
     // atributos
     private String nome;
     private String nacionalidade;
@@ -12,7 +12,7 @@ public class lutador {
     private int derrotas;
     private int empates;
     // construtores
-    public lutador(String no, String na, int id, float al, float pe,int vi, int de, int em) {
+    public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em) {
         this.setNome(no);
         this.setNacionalidade(na);
         this.setIdade(id);
@@ -74,11 +74,19 @@ public class lutador {
         this.vitorias = vi;
     }
 
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+        this.setCategoria();
+    }
     public String getCategoria() {
         return categoria;
     }
 
-    private void setCategoria(float ca) {
+    private void setCategoria() {
         if (this.getPeso() < 52.2) {
             this.categoria = "Invalido";
         }
@@ -91,14 +99,6 @@ public class lutador {
         }else {
             this.categoria = "Invalido";
         }
-    }
-    public float getPeso() {
-        return peso;
-    }
-
-    public void setPeso(float pe) {
-        this.peso = pe;
-        setCategoria(pe);
     }
 
     public float getAltura() {
