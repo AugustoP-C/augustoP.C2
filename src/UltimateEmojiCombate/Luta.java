@@ -1,6 +1,8 @@
 package UltimateEmojiCombate;
 
-public class Luta {
+import java.util.Random;
+
+public class Luta implements Luta__I {
     // atributos
     private Lutador desafiado;
     private Lutador desafiante;
@@ -8,7 +10,7 @@ public class Luta {
     private boolean aprovação;
     // metodos
     public void marcarLuta(Lutador l1, Lutador l2) {
-        if (l1.getCategoria() == l2.getCategoria() && l1 != l2) {
+        if (l1.getCategoria().equals(l2.getCategoria()) && l1 != l2) {
             this.setAprovação(true);
             this.setDesafiado(l1);
             this.setDesafiante(l2);
@@ -19,10 +21,31 @@ public class Luta {
         }
     }
     public void lutar() {
-        if (isAprovação()) {
+        if (this.isAprovação()) {
+            System.out.println("#####DESAFIADO#####");
             this.getDesafiado().apresentar();
+            System.out.println("#####DESAFIANTE#####");
             this.getDesafiante().apresentar();
+            System.out.println("#####CONCLUSÃO#####");
+            Random le = new Random();
+            int a = le.nextInt(3);
+            switch (a) {
+                case 0 : //empate
+                System.out.println("Empatou");
+                this.desafiado.empatarLuta();
+                this.desafiante.empatarLuta();
+                break;
 
+                case 1 : // desafiado vence
+                System.out.println(this.desafiado.getNome() + " ganhou");
+                this.desafiado.ganharLuta();
+                this.desafiante.perderLuta();
+
+                case 2 : // desafiante vence
+                System.out.println(this.desafiante.getNome() + " ganhou");
+                this.desafiado.perderLuta();
+                this.desafiante.ganharLuta();
+            }
         }
         else {
             System.out.println("A luta que você solicitou não foi aprovada");

@@ -1,6 +1,6 @@
 package UltimateEmojiCombate;
 
-public class Lutador {
+public class Lutador implements Lutador__I {
     // atributos
     private String nome;
     private String nacionalidade;
@@ -22,6 +22,7 @@ public class Lutador {
         this.setDerrotas(de);
         this.setEmpates(em);
     }
+
     // metodos
     public void apresentar() {
         System.out.println("Lutador " + this.getNome());
