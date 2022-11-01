@@ -51,7 +51,7 @@ public class Luta implements Luta__I {
             System.out.println("A luta que você solicitou não foi aprovada");
         }
     }
-    // geters e seterrs
+    // geters e seters
     public boolean isAprovação() {
         return aprovação;
     }
