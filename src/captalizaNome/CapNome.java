@@ -3,7 +3,7 @@ package captalizaNome;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Project01 {
+public class CapNome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("|-----Nome-a-ser-Padronisado-----|");
