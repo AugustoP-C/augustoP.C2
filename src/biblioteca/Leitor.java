@@ -7,11 +7,8 @@ public class Leitor {
     private String genero;
     private String nivelLeitura;
     // metodos
-    public void lerLivro() {
-
-    }
-    public void avaliarLivro() {
-
+    public void avaliarLivro(float nota) {
+        System.out.println("livro nota " + nota);
     }
     // geter e seters
     public String getNivelLeitura() {

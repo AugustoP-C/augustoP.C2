@@ -10,9 +10,9 @@ public class Livro implements Publicacao {
     private boolean aberto;
 
     // construtor
-    public Livro(String ti, String aut, int totpa) {
+    public Livro(String tit, String aut, int totpa) {
         this.setAberto(false);
-        this.setTitulo(ti);
+        this.setTitulo(tit);
         this.setAutor(aut);
         this.setTotPaginas(totpa);
     }
@@ -23,13 +23,16 @@ public class Livro implements Publicacao {
             System.out.println("Não da pra abrir um livro ja aberto");
         } else {
             this.setAberto(true);
+            System.out.println("Livro foi aberto");
         }
     }
 
     public void fechar() {
         if (this.isAberto()) {
             this.setAberto(false);
-        } else {
+            System.out.println("Livro foi fechado");
+        }
+        else {
             System.out.println("Não da pra fechar um livro ja fechado");
         }
     }
@@ -47,11 +50,14 @@ public class Livro implements Publicacao {
                     System.out.println("Você folheou o livro e parece que não gostou");
             }
         }
+        else {
+            System.out.println("O livro esta fechado");
+        }
     }
 
     public void avancasrPagina() {
         if (isAberto()) {
-            System.out.println("Você esta na pagina ");
+            System.out.println("Você esta na pagina " + this.getTotPaginas() + "°");
         }
     }
 
@@ -65,24 +71,27 @@ public class Livro implements Publicacao {
         return totPaginas;
     }
 
-    public void setTotPaginas(int totPaginas) {
-        this.totPaginas = totPaginas;
+    public void setTotPaginas(int totpa) {
+        int[] page = new int[totpa];
+        for (int c = 1; c >= totpa; c++) {
+            page[c] = c;
+        }
     }
 
     public String getAutor() {
         return autor;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setAutor(String aut) {
+        this.autor = aut;
     }
 
     public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitulo(String tit) {
+        this.titulo = tit;
     }
 
     public boolean isAberto() {
