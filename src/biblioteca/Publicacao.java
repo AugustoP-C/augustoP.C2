@@ -6,5 +6,4 @@ public interface Publicacao {
     public abstract void folhear();
     public abstract void avancasrPagina();
     public abstract void voltarPagina();
-
 }

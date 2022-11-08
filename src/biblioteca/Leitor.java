@@ -5,17 +5,25 @@ public class Leitor {
     private String nome;
     private int idade;
     private String genero;
-    private String nivelLeitura;
+    private int nivelLeitura;
+    // contrutores
+    public Leitor(String no, int id, String ge, int ni) {
+        this.nome = no;
+        this.idade = id;
+        this.genero = ge;
+        this.nivelLeitura = ni;
+    }
+
     // metodos
-    public void avaliarLivro(float nota) {
-        System.out.println("livro nota " + nota);
+    public void avaliarLivro(float no,Livro le) {
+        System.out.println(this.getNome() + ": livro " + le.getTitulo() + " nota: " + no);
     }
     // geter e seters
-    public String getNivelLeitura() {
+    public int getNivelLeitura() {
         return nivelLeitura;
     }
 
-    public void setNivelLeitura(String nivelLeitura) {
+    public void setNivelLeitura(int nivelLeitura) {
         this.nivelLeitura = nivelLeitura;
     }
 
