@@ -1,13 +1,9 @@
 package escola;
 
-public class Aluno extends Pessoa__root {
+public class Aluno extends Pessoa_Progenitora {
     // atributos
     private int matr;
     private String curso;
-    // contrutor
-    public Aluno(String no, int id, String ge) {
-        super(no, id, ge);
-    }
 
     // metodos
     public void cancelMatr() {

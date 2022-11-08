@@ -1,13 +1,10 @@
 package escola;
 
-public class Funcionario extends Pessoa__root {
+public class Funcionario extends Pessoa_Progenitora {
     // atributos
     private String seteor;
     private boolean trabalhando;
-    // construtor
-    public Funcionario(String no, int id, String ge) {
-        super(no, id, ge);
-    }
+
     // metodos
     public void mudarTrabalho() {
 
@@ -22,11 +19,11 @@ public class Funcionario extends Pessoa__root {
         this.trabalhando = trabalhando;
     }
 
-    public String getSeteor() {
+    public String getSetor() {
         return seteor;
     }
 
-    public void setSeteor(String seteor) {
+    public void setSetor(String seteor) {
         this.seteor = seteor;
     }
 }

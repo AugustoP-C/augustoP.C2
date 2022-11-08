@@ -1,17 +1,10 @@
 package escola;
 
-public class Pessoa__root {
+public class Pessoa_Progenitora {
     // atributos
     private String nome;
     private int idade;
     private String genero;
-    // construtor
-
-    public Pessoa__root(String no, int id, String ge) {
-        this.nome = no;
-        this.idade = id;
-        this.genero = ge;
-    }
 
     // metodos
     public void fazerAniv() {

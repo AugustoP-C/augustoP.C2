@@ -1,13 +1,10 @@
 package escola;
 
-public class Professor extends Pessoa__root {
+public class Professor extends Pessoa_Progenitora {
     // atributos
     private String materia;
     private float salario;
-    // contrutor
-    public Professor(String no, int id, String ge) {
-        super(no, id, ge);
-    }
+
     // metodos
     public void receberAumento() {
 
