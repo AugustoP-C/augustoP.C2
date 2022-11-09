@@ -6,6 +6,15 @@ public class Pessoa_Progenitora {
     private int idade;
     private String genero;
 
+    @Override
+    public String toString() {
+        return "Pessoa_Progenitora{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", genero='" + genero + '\'' +
+                '}';
+    }
+
     // metodos
     public void fazerAniv() {
         this.setIdade(this.getIdade() + 1);

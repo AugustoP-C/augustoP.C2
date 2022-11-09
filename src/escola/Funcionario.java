@@ -7,7 +7,7 @@ public class Funcionario extends Pessoa_Progenitora {
 
     // metodos
     public void mudarTrabalho() {
-
+        this.setTrabalhando(false);
     }
     // geters seterres
 

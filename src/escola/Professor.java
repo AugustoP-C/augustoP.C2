@@ -6,13 +6,12 @@ public class Professor extends Pessoa_Progenitora {
     private float salario;
 
     // metodos
-    public void receberAumento() {
-
+    public void receberAumento(float aum) {
+        this.setSalario(this.getSalario() + aum);
     }
     // geters  seterrrs
 
     public float getSalario() {
-
         return salario;
     }
 

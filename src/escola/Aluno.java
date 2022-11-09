@@ -1,5 +1,7 @@
 package escola;
 
+import java.sql.SQLOutput;
+
 public class Aluno extends Pessoa_Progenitora {
     // atributos
     private int matr;
@@ -7,7 +9,7 @@ public class Aluno extends Pessoa_Progenitora {
 
     // metodos
     public void cancelMatr() {
-
+        System.out.println("Matricula cancelada");
     }
     // geters seterres
 

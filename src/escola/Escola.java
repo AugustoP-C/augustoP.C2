@@ -12,8 +12,23 @@ public class Escola {
         p3.setNome("Cláudio");
         p4.setNome("Fabiana");
 
+        p1.setGenero("M");
+        p2.setGenero("F");
+        p3.setGenero("M");
+        p4.setGenero("F");
+
+        p1.setIdade(11);
+        p2.setIdade(20);
+        p3.setIdade(37);
+        p4.setIdade(25);
+
         p2.setCurso("Imformatica");
-        p3.setSalario(20.000f);
+        p3.setSalario(2.500f);
         p4.setSetor("Estoque");
+
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        System.out.println(p4.toString());
     }
 }
