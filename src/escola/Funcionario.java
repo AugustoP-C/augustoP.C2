@@ -1,6 +1,6 @@
 package escola;
 
-public class Funcionario extends Pessoa_Progenitora {
+public class Funcionario extends Pessoa {
     // atributos
     private String seteor;
     private boolean trabalhando;

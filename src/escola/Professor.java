@@ -1,6 +1,6 @@
 package escola;
 
-public class Professor extends Pessoa_Progenitora {
+public class Professor extends Pessoa {
     // atributos
     private String materia;
     private float salario;

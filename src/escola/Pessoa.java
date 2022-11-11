@@ -1,21 +1,19 @@
 package escola;
 
-public class Pessoa_Progenitora {
+public abstract class Pessoa {
     // atributos
-    private String nome;
-    private int idade;
-    private String genero;
-
+    protected String nome;
+    protected int idade;
+    protected String genero;
     @Override
     public String toString() {
-        return "Pessoa_Progenitora{" +
+        return "Dados{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", genero='" + genero + '\'' +
                 '}';
     }
-
-    // metodos
+    // metodos final
     public void fazerAniv() {
         this.setIdade(this.getIdade() + 1);
     }

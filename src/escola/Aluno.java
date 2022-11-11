@@ -1,15 +1,13 @@
 package escola;
 
-import java.sql.SQLOutput;
-
-public class Aluno extends Pessoa_Progenitora {
+public class Aluno extends Pessoa {
     // atributos
-    private int matr;
-    private String curso;
+    protected int matr;
+    protected String curso;
 
     // metodos
-    public void cancelMatr() {
-        System.out.println("Matricula cancelada");
+    public void pagarMensal() {
+        System.out.println("Mensalidade do aluno " + this.getNome() + " paga");
     }
     // geters seterres
 
