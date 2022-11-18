@@ -1,6 +1,6 @@
 package animais;
 
-public class Tataruga extends Repitil {
+public class Tartaruga extends Repitil {
     // metodos
     @Override
     public void locomover() {
