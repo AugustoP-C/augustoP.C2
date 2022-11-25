@@ -1,5 +1,7 @@
 package escola;
 
+import youTube.Pessoa;
+
 public class Funcionario extends Pessoa {
     // atributos
     private String seteor;
