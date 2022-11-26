@@ -1,7 +1,5 @@
 package escola;
 
-import youTube.Pessoa;
-
-public class Visitante extends Pessoa {
+public class Visitante extends PessoaEscola {
 
 }

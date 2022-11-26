@@ -1,8 +1,6 @@
 package escola;
 
-import youTube.Pessoa;
-
-public class Aluno extends Pessoa {
+public class Aluno extends PessoaEscola {
     // atributos
     protected int matr;
     protected String curso;
