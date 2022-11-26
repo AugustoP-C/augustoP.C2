@@ -3,24 +3,33 @@ package youTube;
 public class Video implements AcoesVideo {
     // atributos
     private String titulo;
-    private boolean avalia;
+    private int avalia;
     private int views;
     private int curtidas;
     private boolean reprod;
+    // contrutor
+    public Video(String titulo) {
+        this.titulo = titulo;
+        this.avalia = 1;
+        this.views = 0;
+        this.curtidas = 0;
+        this.reprod = false;
+    }
+
     // metodos
     @Override
     public void play() {
-
+        this.reprod = true;
     }
 
     @Override
     public void pause() {
-
+        this.reprod = false;
     }
 
     @Override
     public void like() {
-
+        this.curtidas ++ ;
     }
     // geters seters
 
@@ -48,11 +57,11 @@ public class Video implements AcoesVideo {
         this.views = views;
     }
 
-    public boolean isAvalia() {
+    public int getAvalia() {
         return avalia;
     }
 
-    public void setAvalia(boolean avalia) {
+    public void setAvalia(int avalia) {
         this.avalia = avalia;
     }
 
@@ -62,5 +71,16 @@ public class Video implements AcoesVideo {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    @Override
+    public String toString() {
+        return "Video{" +
+                "titulo='" + titulo + '\'' +
+                ", avalia=" + avalia +
+                ", views=" + views +
+                ", curtidas=" + curtidas +
+                ", reprod=" + reprod +
+                '}';
     }
 }

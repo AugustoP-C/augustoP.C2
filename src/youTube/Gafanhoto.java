@@ -1,9 +1,16 @@
 package youTube;
 
-public class Gafanhoto {
+public class Gafanhoto extends PessoaYouTube {
     // atriutos
     private String login;
     private int totAssitidos;
+    // construtor
+    public Gafanhoto(String no, int id, String ge, String login) {
+        super(no, id, ge);
+        this.login = login;
+        this.totAssitidos = 0;
+    }
+
     // metodos
     public void verMasiUm() {
 
@@ -24,5 +31,13 @@ public class Gafanhoto {
 
     public void setLogin(String login) {
         this.login = login;
+    }
+
+    @Override
+    public String toString() {
+        return "Gafanhoto{" + super.toString() +
+                "\nlogin='" + login + '\'' +
+                ", totAssitidos=" + totAssitidos +
+                '}';
     }
 }
