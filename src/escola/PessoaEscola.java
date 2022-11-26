@@ -1,6 +1,6 @@
 package escola;
 
-public abstract class Pessoa {
+public abstract class PessoaEscola {
     // atributos
     protected String nome;
     protected int idade;
