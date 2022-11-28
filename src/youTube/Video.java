@@ -62,7 +62,9 @@ public class Video implements AcoesVideo {
     }
 
     public void setAvalia(int avalia) {
-        this.avalia = avalia;
+        int nova =  0;
+        nova = (int) ((this.avalia + avalia) / this.views);
+        this.avalia = nova;
     }
 
     public String getTitulo() {
