@@ -2,7 +2,7 @@ package animais;
 
 public class Naturesa {
     public static void main(String[] args) {
-        Canguru c = new Canguru("bldlvbkl");
+        Canguru c = new Canguru();
         Cachorro k = new Cachorro();
         Cobra s = new Cobra();
         Tartaruga t = new Tartaruga();

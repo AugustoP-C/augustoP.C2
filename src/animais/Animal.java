@@ -2,6 +2,7 @@ package animais;
 
 public abstract class Animal {
     // atributos
+    protected String especie;
     protected float peso;
     protected int idade;
     protected int membros;
